@@ -25,3 +25,7 @@ def main_function():
     def pallindrom_chek(a):
 
         return a == a[::-1]
+
+
+def test_function():
+    pass
