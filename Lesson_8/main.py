@@ -13,3 +13,11 @@ def main_function():
             return 'Літо'
         else:
             return 'Осінь'
+
+    def new_dict(*args):
+        add_dict = {}
+
+        for arg in args:
+            add_dict.update(arg)
+
+        return add_dict
