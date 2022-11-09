@@ -21,3 +21,7 @@ def main_function():
             add_dict.update(arg)
 
         return add_dict
+
+    def pallindrom_chek(a):
+
+        return a == a[::-1]
