@@ -25,3 +25,12 @@ def main_function():
     def pallindrom_chek(a):
 
         return a == a[::-1]
+
+    def sum_num(number_of_count: int) -> int:
+        str_format = str(number_of_count)
+        list_format = list(str_format)
+
+        for index in range(len(list_format)):
+            list_format[index] = int(list_format[index])
+
+        return sum(list_format)
