@@ -34,3 +34,6 @@ def main_function():
             list_format[index] = int(list_format[index])
 
         return sum(list_format)
+
+def test_function():
+    return "TEST FUNCTION!"
