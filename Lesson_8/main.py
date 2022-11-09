@@ -28,4 +28,4 @@ def main_function():
 
 
 def test_function():
-    pass
+    return "TEST FUNCTION!"
