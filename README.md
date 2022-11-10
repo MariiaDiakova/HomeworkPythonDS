@@ -1,1 +1,1 @@
-# HomeworkPythonDS
+# HomeworkPythonDS by Mariia Diakova
