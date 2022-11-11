@@ -1,5 +1,3 @@
-import string
-
 inp_list_string_check = ['ngfnd,', 'ACCd,,aa', 'fgd.gdg!', 'f fvkmf?', 'fn, vl@#!!!', 'df&&&fd&f????']
 
 
@@ -46,7 +44,3 @@ class DataInterface:
 di = DataInterface()
 
 di.process_texts(inp_list_string_check)
-
-
-
-
