@@ -2,13 +2,8 @@
     та перевіряла чи всі числа в ньому унікальні. Реалізуйте
     у функції декілька обробок виключень.'''
 
+from my_custom_error_3_task import EmptyInputError
 import sys
-
-
-class EmptyInputError(Exception):
-    def __init__(self):
-        super().__init__('Ви нічого не ввели! Пустий рядок!')
-
 
 check_list = list(input('Введіть список чисел: '))
 
@@ -29,8 +24,8 @@ def list_num(check_list: list):
         set_check = set(check_list)
         return len(check_list) == len(set_check)
 
-    except EmptyInputError:
-        print('\nВи нічого не ввели! Пустий рядок', file=sys.stderr)
+    except EmptyInputError as ex:
+        print(f'\n{ex}', file=sys.stderr)
         check_list = list(input('Введіть коректне значення (тільки числа!): '))
         set_check = set(check_list)
         return len(check_list) == len(set_check)
